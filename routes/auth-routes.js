@@ -18,14 +18,14 @@ function isAdmin() {
 }
 
 
-router.get('/no', (req, res, next)=>{
+// router.get('/no', (req, res, next)=>{
 
-  res.send('it didnt work');
-});
+//   res.send('it didnt work');
+// });
 
-router.get('/signup', (req, res, next)=>{
-  res.render('auth/signup');
-});//end get /signup
+// router.get('/signup', (req, res, next)=>{
+//   res.render('auth/signup');
+// });//end get /signup
 
 
  router.post('/signup', (req, res, next)=>{
@@ -37,9 +37,7 @@ router.get('/signup', (req, res, next)=>{
    const role = req.body.role;
 
    if(email ===""||password==="" || firstName === "" || lastName === "" || phone === ""){
-     res.render('auth/signup', {
-       message: "Missing Credentials, please enter a username and password in order to sign up"
-     });
+     res.redirect('/');
      return;
    }
    User.findOne({email:email})
@@ -78,9 +76,9 @@ router.get('/signup', (req, res, next)=>{
 
 // // end of signup
 
- router.get('/login', (req, res, next)=>{
-   res.render('auth/login', { "message": req.flash("error")});
- });//end get /login
+//  router.get('/login', (req, res, next)=>{
+//    res.render('auth/login', { "message": req.flash("error")});
+//  });//end get /login
 
 
  router.post("/login", passport.authenticate("local",
