@@ -37,16 +37,16 @@
 <ul>
     {{#each listings}}
         <li>
-            <a href="/listings/{{this._id}}">{{ this.name }}</a>
-            <a href="/listings/edit/{{this._id}}">Edit</a>
-            <form action="/listings/{{this._id}}/delete" method="post">
+            <a href="/rentals/{{this._id}}">{{ this.name }}</a>
+            <a href="/rentals/edit-view/{{this._id}}">Edit</a>
+            <form action="/rentals/{{this._id}}" method="post">
                 <button type="submit">DELETE</button>
             </form>
         </li>
     {{/each  }}
 </ul>
 
-<a href="/listings/add-new">Create new listing</a>
+<a href="/rentals/add-new">Create new listing</a>
 
 
 
