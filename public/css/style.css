@@ -1,0 +1,95 @@
+/* CSS used here will be applied after bootstrap.css */
+html,body {
+  height:100%;
+    
+}
+
+.first {
+  padding-top:140px;
+  height:100vh;
+  min-height:400px;
+  background-size:cover;
+  background-image:url('http://www.visitflorida.com/content/dam/visitflorida/en-us/images/cities/miami/Downtown2011_08.jpg.1280.500.rendition');
+}
+
+.affix {
+  -webkit-transition:padding 0.2s ease-out;
+  -moz-transition:padding 0.2s ease-out;  
+  -o-transition:padding 0.2s ease-out;         
+  transition:padding 0.2s ease-out;
+
+}
+
+.affix-top {
+  /* navbar style at top */
+  opacity: 0.4;
+  border-color:transparent;
+  padding: 15px;
+  -webkit-transition:all 0.5s ease;
+  -moz-transition:all 0.5s ease; 
+  -o-transition:all 0.5s ease;         
+  transition:all 0.5s ease;  
+}
+
+.affix-top .nav>li>a {
+   color: #000;
+}
+
+.affix-top .navbar-collapse {
+   border-color:transparent;
+   box-shadow:initial;
+}
+
+section {
+  height:calc(90% - 50px);
+  height: 90vh;
+}
+
+/* CSS for modal */
+
+
+.modal-header {
+  padding: 0;
+}
+.modal-header .close {
+  padding: 10px 15px;
+}
+.modal-header ul {
+  border: none;
+}
+.modal-header ul li {
+  margin: 0;
+}
+.modal-header ul li a {
+  border: none;
+  border-radius: 0;
+}
+.modal-header ul li.active a {
+  color: #e12f27;
+}
+.modal-header ul li a:hover {
+  border: none;
+}
+.modal-header ul li a span {
+  margin-left: 10px;
+}
+.modal-body .form-group {
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* End of css for modal */

@@ -1,0 +1,64 @@
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+<br><br>
+
+
+{{!-- 
+<ul>
+  {{#each listings }}
+    <li>{{ this.name }}</li>
+    <li><img src="{{this.photo}}" alt="" width="300" height="300" ></li>
+     <form action="/listing/{{this._id}}/delete" method="post">
+                <button type="submit">DELETE</button>
+    </form>
+  {{/each}}
+</ul> --}}
+
+
+
+
+
+	{{!-- <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="{{this.photo}}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{ this.name }}</h5>
+    <p class="card-text">{{this.description}}</p>
+    <a href="#" class="btn btn-primary">View Details</a>
+  </div>
+</div> --}}
+
+<h2>Listings</h2>
+
+<ul>
+    {{#each listings}}
+        <li>
+            <a href="/listings/{{this._id}}">{{ this.name }}</a>
+            <a href="/listings/edit/{{this._id}}">Edit</a>
+            <form action="/listings/{{this._id}}/delete" method="post">
+                <button type="submit">DELETE</button>
+            </form>
+        </li>
+    {{/each  }}
+</ul>
+
+<a href="/listings/add-new">Create new listing</a>
+
+
+
+
+
+
+
+  <!-- script references -->
+  <script src='/javascripts/script.js'></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+		<script src="js/bootstrap.min.js"></script>

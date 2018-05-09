@@ -1,9 +1,7 @@
 /* CSS used here will be applied after bootstrap.css */
-html,body {
-  height:100%;
-    
-}
 @import url(http://fonts.googleapis.com/css?family=Roboto);
+html, body {
+  height: 100%; }
 
 /****** LOGIN MODAL ******/
 .loginmodal-container {
@@ -15,21 +13,18 @@ html,body {
   border-radius: 2px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
   overflow: hidden;
-  font-family: roboto;
-}
+  font-family: roboto; }
 
 .loginmodal-container h1 {
   text-align: center;
   font-size: 1.8em;
-  font-family: roboto;
-}
+  font-family: roboto; }
 
 .loginmodal-container input[type=submit] {
   width: 100%;
   display: block;
   margin-bottom: 10px;
-  position: relative;
-}
+  position: relative; }
 
 .loginmodal-container input[type=text], input[type=password] {
   height: 44px;
@@ -43,16 +38,14 @@ html,body {
   /* border-radius: 2px; */
   padding: 0 8px;
   box-sizing: border-box;
-  -moz-box-sizing: border-box;
-}
+  -moz-box-sizing: border-box; }
 
 .loginmodal-container input[type=text]:hover, input[type=password]:hover {
   border: 1px solid #b9b9b9;
   border-top: 1px solid #a0a0a0;
-  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-}
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); }
 
 .loginmodal {
   text-align: center;
@@ -61,30 +54,27 @@ html,body {
   font-weight: 700;
   height: 36px;
   padding: 0 8px;
-/* border-radius: 3px; */
-/* -webkit-user-select: none;
-  user-select: none; */
-}
+  /* border-radius: 3px; */
+  /* -webkit-user-select: none;
+  user-select: none; */ }
 
 .loginmodal-submit {
   /* border: 1px solid #3079ed; */
   border: 0px;
   color: #fff;
-  text-shadow: 0 1px rgba(0,0,0,0.1); 
+  text-shadow: 0 1px rgba(0, 0, 0, 0.1);
   background-color: #4d90fe;
   padding: 17px 0px;
   font-family: roboto;
   font-size: 14px;
-  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
-}
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */ }
 
 .loginmodal-submit:hover {
   /* border: 1px solid #2f5bb7; */
   border: 0px;
-  text-shadow: 0 1px rgba(0,0,0,0.3);
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
   background-color: #357ae8;
-  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
-}
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */ }
 
 .loginmodal-container a {
   text-decoration: none;
@@ -93,93 +83,74 @@ html,body {
   text-align: center;
   display: inline-block;
   opacity: 0.6;
-  transition: opacity ease 0.5s;
-} 
+  transition: opacity ease 0.5s; }
 
-.login-help{
-  font-size: 12px;
-}
-
-// end of modal styling
+.login-help {
+  font-size: 12px; }
 
 .first {
-  padding-top:140px;
-  height:100vh;
-  min-height:400px;
-  background-size:cover;
-  background-image:url('http://www.visitflorida.com/content/dam/visitflorida/en-us/images/cities/miami/Downtown2011_08.jpg.1280.500.rendition');
-}
+  padding-top: 140px;
+  height: 100vh;
+  min-height: 400px;
+  background-size: cover;
+  background-image: url("http://www.visitflorida.com/content/dam/visitflorida/en-us/images/cities/miami/Downtown2011_08.jpg.1280.500.rendition"); }
 
 .affix {
-  -webkit-transition:padding 0.2s ease-out;
-  -moz-transition:padding 0.2s ease-out;  
-  -o-transition:padding 0.2s ease-out;         
-  transition:padding 0.2s ease-out;
-
-}
+  -webkit-transition: padding 0.2s ease-out;
+  -moz-transition: padding 0.2s ease-out;
+  -o-transition: padding 0.2s ease-out;
+  transition: padding 0.2s ease-out; }
 
 .affix-top {
   /* navbar style at top */
   opacity: 0.4;
-  border-color:transparent;
+  border-color: transparent;
   padding: 15px;
-  -webkit-transition:all 0.5s ease;
-  -moz-transition:all 0.5s ease; 
-  -o-transition:all 0.5s ease;         
-  transition:all 0.5s ease;  
-}
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
 
-.affix-top .nav>li>a {
-   color: #000;
-}
+.affix-top .nav > li > a {
+  color: #000; }
 
 .affix-top .navbar-collapse {
-   border-color:transparent;
-   box-shadow:initial;
-}
+  border-color: transparent;
+  box-shadow: initial; }
 
 section {
-  height:calc(90% - 50px);
-  height: 90vh;
-}
+  height: calc(90% - 50px);
+  height: 90vh; }
 
 /* CSS for modal */
-
-
 .modal-header {
-  padding: 0;
-}
+  padding: 0; }
+
 .modal-header .close {
-  padding: 10px 15px;
-}
+  padding: 10px 15px; }
+
 .modal-header ul {
-  border: none;
-}
+  border: none; }
+
 .modal-header ul li {
-  margin: 0;
-}
+  margin: 0; }
+
 .modal-header ul li a {
   border: none;
-  border-radius: 0;
-}
+  border-radius: 0; }
+
 .modal-header ul li.active a {
-  color: #e12f27;
-}
+  color: #e12f27; }
+
 .modal-header ul li a:hover {
-  border: none;
-}
+  border: none; }
+
 .modal-header ul li a span {
-  margin-left: 10px;
-}
+  margin-left: 10px; }
+
 .modal-body .form-group {
-  margin-bottom: 10px;
-}
-
-
-
-
-
-
-
+  margin-bottom: 10px; }
 
 /* End of css for modal */
+
+/*# sourceMappingURL=style.css.map */

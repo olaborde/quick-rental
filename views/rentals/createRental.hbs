@@ -1,0 +1,24 @@
+<form action="/rentals/create" method="post" enctype="multipart/form-data">
+
+  <label for="">Rental name:</label>
+  <input type="text" name="rentalName" id="">
+  <br>
+  <label for="">Rental address:</label>
+  <input type="text" name="rentalAddress" id="">
+  <br>
+  <label for="">Rental description:</label>
+  <textarea name="rentalDescription" id="" cols="30" rows="4"></textarea>
+  <br>
+  <label for="">Available:</label>
+  <select name="availability">
+    <option value="true">Yes</option>
+    <option value="false">No</option>
+  </select>
+  <br>
+
+  <label for="">Insert the photo</label>
+  <input type="file" name="rentalPhoto" id="">
+<br><br>
+  <button type="submit"> Create listing</button>
+
+</form>
