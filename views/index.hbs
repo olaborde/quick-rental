@@ -6,7 +6,30 @@
 
 <section>
   <div class="container" id="listing"> 
-    <h1>Here is some more content</h1>
+    <h1>Available listings</h1>
+      {{#each listings}}
+<div class="card-main">
+
+    <div class="card" style="width: 18rem;">
+
+        <img class="card-img-top" src="{{this.photo}}" alt="Card image cap" width="200" height="200">
+        <div class="card-body">
+          <h5 class="card-title"> <a href="/rentals/{{this._id}}">{{ this.name }}</a></h5>
+          <p class="card-text">{{this.description}}</p>
+          <a href="/rentals/{{this._id}}" class="btn btn-primary">Learn More..</a>
+        </div>
+      </div>
+      <button><a href="/rentals/edit-view/{{this._id}}">Edit</a></button>
+            <form action="/rentals/{{this._id}}" method="post">
+                <button type="submit">DELETTE</button>
+            </form> 
+
+  </div>
+{{/each  }}
+
+<br>
+<br>
+    
   </div>
 </section>
 

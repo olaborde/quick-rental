@@ -31,6 +31,17 @@ router.get('/', (req, res, next) => {
 });
 
 
+router.get('/rentals/listall', (req, res, next) => {
+  Listing.find()
+  .then( listingsFromDb => {
+    res.render('index', { listings: listingsFromDb });
+  } )
+  .catch( error => {
+    console.log("Error while displaying listing: ", error);
+  } );
+});
+
+
 // router.post('/create', (req, res, next)=>{
 //   User.create({
     

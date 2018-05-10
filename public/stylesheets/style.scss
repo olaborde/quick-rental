@@ -175,20 +175,44 @@ section {
   margin-bottom: 10px;
 }
 
+// card stylings
+div.card-main {
+  width: auto;
+  overflow: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  margin-left: 40px;
+  margin-top: 40px;
+  display: inline-block;
+  
+}
 
 
+.card {
+ margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+  max-height:300px;
+  overflow:auto;
+  
+}
 
-
-
+//end of card stylings
 
 
 /* End of css for modal */
   footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    /* Set the fixed height of the footer here */
-    height: 60px;
+    position: relative;
+    margin-top: -150px; /* negative value of footer height */
+    height: 150px;
+    clear:both;
+    padding-top:20px;
     background-color: #999999;
   }
+  .card .card-block {
+    max-height:300px;
+    overflow:auto;}
+
+
+  .heart{color:#e25555;}
   // end of footer

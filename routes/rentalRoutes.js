@@ -25,7 +25,8 @@ router.post('/rentals/create', myUploader.single('rentalPhoto'), (req, res, next
     address: req.body.rentalAddress,
     description: req.body.rentalDescription,
     availability: req.body.availability,
-    photo: `/images/${req.file.filename}`
+    photo: `/images/${req.file.filename}`,
+    listingOwner: req.user._id
   });
   newRental.save()
   .then( () => {
@@ -40,9 +41,21 @@ router.post('/rentals/create', myUploader.single('rentalPhoto'), (req, res, next
 
 
 router.get('/rentals/list', (req, res, next) => {
-  Listing.find()
+  Listing.find({listingOwner: req.user._id})
   .then( listingsFromDb => {
     res.render('rentals/list', { listings: listingsFromDb });
+  } )
+  .catch( error => {
+    console.log("Error while displaying listing: ", error);
+  } );
+});
+
+
+//render on index
+router.get('/rentals/listall', (req, res, next) => {
+  Listing.find()
+  .then( listingsFromDb => {
+    res.render('index', { listings: listingsFromDb });
   } )
   .catch( error => {
     console.log("Error while displaying listing: ", error);
