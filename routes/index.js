@@ -1,5 +1,7 @@
 const express = require('express');
 const router  = express.Router();
+const Listing = require('../models/listing');
+
 // const Listing = require('../models/listing.js');
 // const uploadCloud = require('../config/cloudinary.js');
 
@@ -27,19 +29,27 @@ const router  = express.Router();
 
 /* GET home page */
 router.get('/', (req, res, next) => {
-  res.render('index');
-});
-
-
-router.get('/rentals/listall', (req, res, next) => {
   Listing.find()
   .then( listingsFromDb => {
+    console.log(listingsFromDb);
     res.render('index', { listings: listingsFromDb });
   } )
   .catch( error => {
     console.log("Error while displaying listing: ", error);
   } );
+  // res.render('index');
 });
+
+
+// router.get('/rentals/listall', (req, res, next) => {
+//   Listing.find()
+//   .then( listingsFromDb => {
+//     res.sendfile('index', { listings: listingsFromDb });
+//   } )
+//   .catch( error => {
+//     console.log("Error while displaying listing: ", error);
+//   } );
+// });
 
 
 // router.post('/create', (req, res, next)=>{

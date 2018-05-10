@@ -178,12 +178,13 @@ section {
 // card stylings
 div.card-main {
   width: auto;
-  overflow: auto;
+  overflow: hidden;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
   margin-left: 40px;
   margin-top: 40px;
   display: inline-block;
+  padding: auto;
   
 }
 
@@ -191,9 +192,10 @@ div.card-main {
 .card {
  margin: 0 auto; /* Added */
   float: none; /* Added */
-  margin-bottom: 10px; /* Added */
+  margin-top: 20px;
+  margin-bottom: 20px; /* Added */
   max-height:300px;
-  overflow:auto;
+ 
   
 }
 
@@ -216,3 +218,52 @@ div.card-main {
 
   .heart{color:#e25555;}
   // end of footer
+
+
+  // container stylings
+
+  .container{
+
+    clear:both;
+	height:100%;
+  }
+
+  // css for contact page
+
+
+  /*Font-awesome integration*/
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+/*Google font integration*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+#contact{
+    background-color:#f1f1f1;
+    font-family: 'Roboto', sans-serif;
+    clear: both;
+}
+
+#contact .well{
+    margin-top:30px;
+    border-radius:0;
+}
+
+#contact .form-control{
+    border-radius: 0;
+    border:2px solid #ADD8E6;
+}
+
+#contact button{
+    border-radius:0;
+    border:2px solid #ADD8E6;
+}
+
+#contact .row{
+    margin-bottom:30px;
+}
+
+@media (max-width: 768px) { 
+    #contact iframe {
+        margin-bottom: 15px;
+    }
+    
+}

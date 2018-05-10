@@ -55,6 +55,7 @@ router.get('/rentals/list', (req, res, next) => {
 router.get('/rentals/listall', (req, res, next) => {
   Listing.find()
   .then( listingsFromDb => {
+    console.log(listingsFromDb);
     res.render('index', { listings: listingsFromDb });
   } )
   .catch( error => {

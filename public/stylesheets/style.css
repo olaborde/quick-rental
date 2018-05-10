@@ -1,5 +1,7 @@
 /* CSS used here will be applied after bootstrap.css */
 @import url(http://fonts.googleapis.com/css?family=Roboto);
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 html, body {
   height: 100%; }
 
@@ -153,22 +155,23 @@ section {
 
 div.card-main {
   width: auto;
-  overflow: auto;
+  overflow: hidden;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
   margin-left: 40px;
   margin-top: 40px;
-  display: inline-block; }
+  display: inline-block;
+  padding: auto; }
 
 .card {
   margin: 0 auto;
   /* Added */
   float: none;
   /* Added */
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   /* Added */
-  max-height: 300px;
-  overflow: auto; }
+  max-height: 300px; }
 
 /* End of css for modal */
 footer {
@@ -186,5 +189,35 @@ footer {
 
 .heart {
   color: #e25555; }
+
+.container {
+  clear: both;
+  height: 100%; }
+
+/*Font-awesome integration*/
+/*Google font integration*/
+#contact {
+  background-color: #f1f1f1;
+  font-family: 'Roboto', sans-serif;
+  clear: both; }
+
+#contact .well {
+  margin-top: 30px;
+  border-radius: 0; }
+
+#contact .form-control {
+  border-radius: 0;
+  border: 2px solid #ADD8E6; }
+
+#contact button {
+  border-radius: 0;
+  border: 2px solid #ADD8E6; }
+
+#contact .row {
+  margin-bottom: 30px; }
+
+@media (max-width: 768px) {
+  #contact iframe {
+    margin-bottom: 15px; } }
 
 /*# sourceMappingURL=style.css.map */
