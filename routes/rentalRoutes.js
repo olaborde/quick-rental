@@ -67,10 +67,16 @@ router.get('/rentals/listall', (req, res, next) => {
 router.get('/rentals/:theId', (req, res, next) => {
   const listingId = req.params.theId;
   // console.log(clistingId)
+  const data= {}
   Listing.findById(listingId)
   .then(oneListingFromDB => {
+    data.listings = oneListingFromDB
+    User.findById(oneListingFromDB.listingOwner)
+    .then(ownerFromDb => {
+      data.owner = ownerFromDb
+      res.render('rentals/details-view', data);
+    })
       // console.log(onelistingFromDB)
-      res.render('rentals/details-view', { listings: oneListingFromDB });
   })
   .catch( error => {
       console.log("Error while getting details: ", error);

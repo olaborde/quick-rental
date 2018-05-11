@@ -37,8 +37,14 @@
     <!-- Text -->
     <p class="card-text">{{ listings.description}}</p>
     <p class="card-text">{{ listings.address}}</p>
-    <p class="card-text">{{ listings.availability}}</p>
-    <p class="card-text">{{listings.listingOwner}}</p>
+    {{#if listings.availability}}
+    <p class="card-text">yes</p>
+    {{#else}}
+    <p class="card-text">no</p>
+    {{/else}}
+    {{/if}}
+    {{!-- <p class="card-text">{{ listings.availability}}</p> --}}
+    <p class="card-text">{{owner.firstName}} {{owner.lastName}}</p>
    
   </div>
 
