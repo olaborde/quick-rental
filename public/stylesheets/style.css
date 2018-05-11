@@ -3,7 +3,9 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 html, body {
-  height: 100%; }
+  height: 100%;
+  margin: 0;
+  padding: 0; }
 
 /****** LOGIN MODAL ******/
 .loginmodal-container {
@@ -181,7 +183,7 @@ footer {
   height: 150px;
   clear: both;
   padding-top: 20px;
-  background-color: #999999; }
+  background-color: #357ae8; }
 
 .card .card-block {
   max-height: 300px;
@@ -192,7 +194,14 @@ footer {
 
 .container {
   clear: both;
-  height: 100%; }
+  height: 100%;
+  overflow: auto; }
+
+.first {
+  color: #ADD8E6; }
+
+.section {
+  min-height: 500px; }
 
 /*Font-awesome integration*/
 /*Google font integration*/
@@ -219,5 +228,60 @@ footer {
 @media (max-width: 768px) {
   #contact iframe {
     margin-bottom: 15px; } }
+
+.createCard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #4d90fe;
+  margin-right: 400px;
+  margin-left: 400px;
+  border-radius: 25px; }
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%; }
+
+.fa:hover {
+  opacity: 0.7; }
+
+.fa-google {
+  background: #dd4b39;
+  color: white; }
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white; }
+
+.fa-youtube {
+  background: #bb0000;
+  color: white; }
+
+.fa-github {
+  background: #125688;
+  color: white; }
+
+.detailClass {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #4d90fe;
+  margin-right: 400px;
+  margin-left: 400px;
+  margin-bottom: 50px;
+  border-radius: 25px;
+  height: 100%;
+  overflow: auto; }
 
 /*# sourceMappingURL=style.css.map */

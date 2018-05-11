@@ -4,7 +4,7 @@
 <br>
 <br>
 <br>
-
+{{!-- 
 <h2>{{listings.name}}</h2>
 <img src="{{listings.photo}}" alt="listing photo" height="42" width="42">
 <p>{{ listings.description }}</p>
@@ -12,10 +12,10 @@
 <p>{{listings.availability}}</p>
 <p>{{listings.listingOwner}}</p>
 
-<a href="/">Back to home page</a>
+<a href="/">Back to home page</a> --}}
+<center><h2>Details</h2></center>
 
-
-
+<div class="detailClass">
 
 
 <!-- Card -->
@@ -23,7 +23,7 @@
 
   <!-- Card image -->
   <div class="view overlay">
-    <img class="card-img-top" src="{{listings.photo}}" alt="Card image cap">
+    <img class="card-img-top" src="{{listings.photo}}" alt="Card image cap" height="200" width="200">
     <a href="#!">
       <div class="mask rgba-white-slight"></div>
     </a>
@@ -33,14 +33,32 @@
   <div class="card-body">
 
     <!-- Title -->
-    <h4 class="card-title">Card title</h4>
+    <h4 class="card-title">{{listings.name}}</h4>
     <!-- Text -->
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <!-- Button -->
-    <a href="#" class="btn btn-primary">Button</a>
-
+    <p class="card-text">{{ listings.description}}</p>
+    <p class="card-text">{{ listings.address}}</p>
+    <p class="card-text">{{ listings.availability}}</p>
+    <p class="card-text">{{listings.listingOwner}}</p>
+   
   </div>
 
 </div>
+<button type="button" class="btn btn-default btn-lg btn-block"><a href="/">Back to home page</a></button>
 <!-- Card -->
+</div>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
             
